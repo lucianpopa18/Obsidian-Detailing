@@ -353,6 +353,9 @@ textarea {
   justify-content: flex-end;
   position: relative;
   overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(8, 11, 16, 0.14) 0%, rgba(8, 11, 16, 0.46) 48%, rgba(8, 11, 16, 0.92) 100%),
+    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80') center center / cover no-repeat;
 }
 
 .hero-visual {
@@ -394,7 +397,7 @@ textarea {
   justify-content: space-between;
   gap: 12px;
   margin-bottom: auto;
-  color: var(--muted);
+  color: rgba(245, 247, 251, 0.82);
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.78rem;
@@ -598,42 +601,48 @@ textarea {
 }
 
 .comparison-card {
+  --comparison-image: url('https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=80');
   position: relative;
   min-height: 260px;
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid var(--line);
+  isolation: isolate;
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0 50%, rgba(255, 255, 255, 0.08) 50% 100%),
-    radial-gradient(circle at 25% 35%, rgba(126, 135, 147, 0.14), transparent 35%),
-    radial-gradient(circle at 75% 65%, rgba(255, 255, 255, 0.12), transparent 28%),
-    linear-gradient(135deg, #080b11, #161b23);
+    linear-gradient(180deg, rgba(7, 9, 13, 0.04), rgba(7, 9, 13, 0.24)),
+    var(--comparison-image) center center / cover no-repeat;
 }
 
 .comparison-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 50% 0 0;
+  background:
+    linear-gradient(180deg, rgba(7, 9, 13, 0.38), rgba(7, 9, 13, 0.66)),
+    var(--comparison-image) center center / cover no-repeat;
+  filter: grayscale(1) brightness(0.58) saturate(0.45);
+  transform: scale(1.02);
+  z-index: 1;
+}
+
+.comparison-card::after {
   content: "";
   position: absolute;
   left: 50%;
   top: 0;
   bottom: 0;
   width: 2px;
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.12);
+  z-index: 2;
 }
 
 .comparison-card.paint {
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 0 50%, rgba(255, 255, 255, 0.09) 50% 100%),
-    radial-gradient(circle at 25% 40%, rgba(84, 93, 107, 0.2), transparent 30%),
-    radial-gradient(circle at 68% 52%, rgba(255, 255, 255, 0.18), transparent 25%),
-    linear-gradient(140deg, #090c11, #131922);
+  --comparison-image: url('https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80');
 }
 
 .comparison-card.wheels {
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0 50%, rgba(255, 255, 255, 0.11) 50% 100%),
-    radial-gradient(circle at 28% 50%, rgba(95, 105, 118, 0.25), transparent 22%),
-    radial-gradient(circle at 72% 50%, rgba(255, 255, 255, 0.16), transparent 18%),
-    linear-gradient(140deg, #080b11, #171d27);
+  --comparison-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80');
 }
 
 .state {
@@ -645,7 +654,9 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 0.18em;
   border: 1px solid var(--line);
-  background: rgba(7, 9, 13, 0.62);
+  background: rgba(7, 9, 13, 0.72);
+  z-index: 3;
+  backdrop-filter: blur(8px);
 }
 
 .state-before {
