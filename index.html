@@ -2,35 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Obsidian Detailing is a premium auto detailing studio in Tilburg, Netherlands, offering interior detailing, exterior detailing, paint correction, ceramic coating, and tailored premium car care." />
-  <meta name="theme-color" content="#050608" />
-  <meta name="color-scheme" content="dark" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="Obsidian Detailing" />
-  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Obsidian Detailing is a premium auto detailing studio in Tilburg, delivering refined interior, exterior, paint correction, and ceramic coating services with meticulous attention to detail." />
   <title>Obsidian Detailing | Premium Auto Detailing in Tilburg</title>
-  <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-noise"></div>
-  <div class="page-glow page-glow-left"></div>
-  <div class="page-glow page-glow-right"></div>
+  <div class="site-shell"></div>
 
   <header class="header" id="top">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Obsidian Detailing home">
         <span class="brand-mark"></span>
-        <span class="brand-text">
+        <span>
           <strong>Obsidian</strong>
           <em>Detailing</em>
         </span>
@@ -38,19 +25,18 @@
 
       <nav class="nav" id="site-nav">
         <a href="#services">Services</a>
-        <a href="#pricing">Packages</a>
-        <a href="#results">Results</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery">Results</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-actions">
-        <a class="button button-ghost button-sm" href="tel:+31612345678">Call</a>
-        <a class="button button-primary button-sm" href="#contact">Book Now</a>
+        <a class="button button-ghost" href="tel:+31612345678">Call Us</a>
+        <a class="button button-primary" href="#contact">Book Now</a>
         <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
-          <span></span>
-          <span></span>
+          <span></span><span></span>
         </button>
       </div>
     </div>
@@ -60,69 +46,61 @@
     <section class="hero section">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow">Premium auto detailing · Tilburg, Netherlands</div>
-          <h1>Premium detailing for cars that should look as sharp as they drive.</h1>
+          <div class="eyebrow">Premium Auto Detailing · Tilburg, Netherlands</div>
+          <h1>Precision detailing for vehicles that deserve a flawless finish.</h1>
           <p class="hero-text">
-            Obsidian Detailing delivers high-end interior and exterior care with a modern, results-first approach. From deep interior resets to paint correction and ceramic coating, every service is built around precision, trust, and a finish that feels premium the moment you see it.
+            Obsidian Detailing delivers refined interior care, deep exterior restoration, and premium paint protection with a clean,
+            modern process built around visible results and obsessive attention to detail.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Book Now</a>
-            <a class="button button-secondary" href="#pricing">Request a Quote</a>
+            <a class="button button-primary" href="#contact">Get a Quote</a>
+            <a class="button button-secondary" href="#pricing">View Packages</a>
           </div>
 
           <div class="hero-points">
+            <span>Premium-grade products</span>
             <span>Appointment-only studio care</span>
-            <span>Premium products & safe methods</span>
-            <span>Attention to every visible detail</span>
-          </div>
-
-          <div class="hero-metrics">
-            <article>
-              <strong>Deep Clean</strong>
-              <span>Interior, trim, fabric, leather, and glass detailed with care.</span>
-            </article>
-            <article>
-              <strong>Gloss & Correction</strong>
-              <span>Swirls, haze, and dullness reduced for a sharper finish.</span>
-            </article>
-            <article>
-              <strong>Long-Term Protection</strong>
-              <span>Ceramic coating packages designed for easier maintenance.</span>
-            </article>
+            <span>Tailored service for every vehicle</span>
           </div>
         </div>
 
         <div class="hero-visual reveal reveal-delay">
-          <div class="hero-image-wrap">
-            <img
-              class="hero-image"
-              src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1600&q=80"
-              alt="Premium sports car photographed from the front"
-            />
-            <div class="hero-badge hero-badge-top">
-              <span class="badge-label">Tilburg studio standard</span>
-              <strong>Clean. Corrected. Protected.</strong>
+          <div class="hero-card glass-card">
+            <div class="hero-card-top">
+              <span>Studio Standard</span>
+              <span>Obsessive Finish</span>
             </div>
-            <div class="hero-badge hero-badge-bottom">
-              <span class="badge-label">Most requested</span>
-              <strong>Full Detail · Paint Correction · Ceramic Coating</strong>
+            <h2>Designed to restore depth, gloss, and confidence.</h2>
+            <p>
+              From daily drivers to enthusiast cars, every detail is approached with calm precision, premium tools, and a finish-first mindset.
+            </p>
+            <div class="hero-stats">
+              <div>
+                <strong>Interior</strong>
+                <span>Deep clean and reset</span>
+              </div>
+              <div>
+                <strong>Paint</strong>
+                <span>Correction and gloss enhancement</span>
+              </div>
+              <div>
+                <strong>Protection</strong>
+                <span>Durable ceramic solutions</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="quick-cta">
-      <div class="container quick-cta-wrap reveal">
-        <div>
-          <span class="eyebrow small">Why clients book</span>
-          <h2>Cleaner interiors. Sharper paint. Stronger first impressions.</h2>
-        </div>
-        <div class="quick-cta-actions">
-          <a class="button button-primary" href="#contact">Get a Quote</a>
-          <a class="button button-ghost" href="#results">See Results</a>
-        </div>
+    <section class="trust-bar">
+      <div class="container trust-items">
+        <span>Premium Detailing</span>
+        <span>Paint Correction</span>
+        <span>Ceramic Coating</span>
+        <span>Interior Restoration</span>
+        <span>Tilburg Based</span>
       </div>
     </section>
 
@@ -130,61 +108,61 @@
       <div class="container">
         <div class="section-head reveal">
           <div class="eyebrow">Services</div>
-          <h2>Clear services built for visible improvement.</h2>
+          <h2>Professional detailing services built around results.</h2>
           <p>
-            Every service is easy to scan, easy to understand, and focused on what matters most: what gets done, who it suits, and what kind of result you can expect.
+            Every treatment is structured for clarity: what it does, what is included, and who it suits best.
           </p>
         </div>
 
         <div class="services-grid">
           <article class="service-card reveal">
             <h3>Interior Detailing</h3>
-            <p>Restore the cabin with a full interior clean designed to remove dust, daily grime, and that tired used feel.</p>
+            <p>A deep interior reset that removes dirt, dust, and daily-use buildup for a fresher cabin.</p>
             <div class="service-meta">
               <strong>Includes</strong>
               <ul>
-                <li>Vacuum and air blow-out</li>
+                <li>Full vacuum and blow-out</li>
                 <li>Dashboard, console, vents, and trims cleaned</li>
                 <li>Interior glass cleaned</li>
                 <li>Light stain treatment</li>
               </ul>
             </div>
-            <span class="ideal-for">Ideal for: daily drivers, lease returns, and interiors that need a proper reset.</span>
+            <span class="ideal-for">Ideal for: daily drivers, lease returns, and neglected interiors.</span>
           </article>
 
           <article class="service-card reveal">
             <h3>Exterior Detailing</h3>
-            <p>A safe exterior wash and decontamination process that brings back gloss, cleanliness, and a more refined finish.</p>
+            <p>A careful exterior cleanse that restores gloss, sharpness, and a properly maintained finish.</p>
             <div class="service-meta">
               <strong>Includes</strong>
               <ul>
-                <li>Safe hand wash and dry</li>
+                <li>Safe hand wash</li>
                 <li>Wheel and tire deep clean</li>
                 <li>Bug, tar, and fallout removal</li>
-                <li>Finishing dressings on trims and tires</li>
+                <li>Paint-safe drying and finishing dressings</li>
               </ul>
             </div>
-            <span class="ideal-for">Ideal for: cars that need more than a fast wash and want a premium look again.</span>
+            <span class="ideal-for">Ideal for: vehicles needing more than a quick wash.</span>
           </article>
 
           <article class="service-card reveal">
             <h3>Paint Correction / Polish</h3>
-            <p>Machine polishing to reduce swirl marks, light scratches, haze, and dullness while restoring depth and clarity.</p>
+            <p>Machine polishing designed to reduce swirl marks, oxidation, haze, and light scratches.</p>
             <div class="service-meta">
               <strong>Includes</strong>
               <ul>
                 <li>Paint inspection under detailing lights</li>
-                <li>Single-stage or multi-stage correction</li>
-                <li>Gloss enhancement polishing</li>
-                <li>Surface prep for protection</li>
+                <li>Single-stage or multi-stage polish</li>
+                <li>Gloss enhancement</li>
+                <li>Refined finish preparation</li>
               </ul>
             </div>
-            <span class="ideal-for">Ideal for: black cars, enthusiast vehicles, and paint that has lost sharpness.</span>
+            <span class="ideal-for">Ideal for: dull paint, light defects, and showroom-style gloss.</span>
           </article>
 
           <article class="service-card reveal">
             <h3>Ceramic Coating</h3>
-            <p>Professional paint protection that enhances gloss, repels contamination, and makes ongoing maintenance easier.</p>
+            <p>Long-term paint protection that boosts gloss and makes routine washing easier.</p>
             <div class="service-meta">
               <strong>Includes</strong>
               <ul>
@@ -194,79 +172,94 @@
                 <li>Aftercare guidance</li>
               </ul>
             </div>
-            <span class="ideal-for">Ideal for: owners who want long-term protection and a cleaner-looking car for longer.</span>
+            <span class="ideal-for">Ideal for: owners who want durable protection and easier maintenance.</span>
           </article>
 
           <article class="service-card reveal">
             <h3>Upholstery Cleaning</h3>
-            <p>Deep cleaning for fabric seats, carpets, and mats to lift embedded dirt, spills, and odours.</p>
+            <p>Fabric seats, carpets, and mats are treated to lift embedded dirt, stains, and odours.</p>
             <div class="service-meta">
               <strong>Includes</strong>
               <ul>
                 <li>Fabric pre-treatment</li>
-                <li>Spot stain work</li>
-                <li>Extraction or shampoo process</li>
-                <li>Mat cleaning and drying</li>
+                <li>Shampoo or extraction process</li>
+                <li>Mat cleaning</li>
+                <li>Targeted stain work</li>
               </ul>
             </div>
-            <span class="ideal-for">Ideal for: family cars, spill-prone interiors, pet hair, and seasonal deep cleans.</span>
+            <span class="ideal-for">Ideal for: family cars, spills, pet hair, and seasonal deep cleaning.</span>
           </article>
 
           <article class="service-card reveal">
             <h3>Leather Treatment</h3>
-            <p>Clean, nourish, and protect leather surfaces to keep them soft, rich-looking, and properly maintained.</p>
+            <p>Leather surfaces are cleaned, nourished, and finished to retain a supple, factory-fresh feel.</p>
             <div class="service-meta">
               <strong>Includes</strong>
               <ul>
                 <li>Gentle leather cleaning</li>
-                <li>Crease and seam detailing</li>
+                <li>Crease and pore cleaning</li>
                 <li>Conditioning treatment</li>
                 <li>Protective finish</li>
               </ul>
             </div>
-            <span class="ideal-for">Ideal for: premium interiors, older leather, and cars that deserve a fresher cabin feel.</span>
+            <span class="ideal-for">Ideal for: premium interiors, older leather, and routine preservation.</span>
           </article>
 
           <article class="service-card reveal">
             <h3>Headlight Restoration</h3>
-            <p>Restore cloudy headlights for a cleaner appearance and improved clarity at the front of the car.</p>
+            <p>Cloudy or faded headlights are restored for a cleaner appearance and improved visibility.</p>
             <div class="service-meta">
               <strong>Includes</strong>
               <ul>
-                <li>Oxidation removal</li>
-                <li>Wet sanding when needed</li>
+                <li>Surface correction</li>
+                <li>Wet sanding where required</li>
                 <li>Polishing and refinement</li>
                 <li>Protective sealant</li>
               </ul>
             </div>
-            <span class="ideal-for">Ideal for: faded headlights, older vehicles, and front ends that look tired.</span>
+            <span class="ideal-for">Ideal for: oxidized headlights and tired front-end appearance.</span>
           </article>
 
           <article class="service-card reveal">
             <h3>Full Detailing Package</h3>
-            <p>A full inside-and-out transformation for owners who want the most visible all-round improvement in one visit.</p>
+            <p>A complete inside-and-out transformation for vehicles that need a comprehensive reset.</p>
             <div class="service-meta">
               <strong>Includes</strong>
               <ul>
                 <li>Interior deep clean</li>
                 <li>Exterior detail and decontamination</li>
-                <li>Trim, tire, and glass finishing</li>
+                <li>Trim and tire finishing</li>
                 <li>Protection applied to key surfaces</li>
               </ul>
             </div>
-            <span class="ideal-for">Ideal for: resale prep, special occasions, and cars that need a serious refresh.</span>
+            <span class="ideal-for">Ideal for: resale preparation, special occasions, and neglected cars.</span>
+          </article>
+
+          <article class="service-card reveal">
+            <h3>Custom Detail Plan</h3>
+            <p>Need a tailored solution? Build a service package based on your vehicle condition and goals.</p>
+            <div class="service-meta">
+              <strong>Includes</strong>
+              <ul>
+                <li>Condition-based consultation</li>
+                <li>Service recommendations</li>
+                <li>Transparent pricing</li>
+                <li>Optional maintenance plan</li>
+              </ul>
+            </div>
+            <span class="ideal-for">Ideal for: performance cars, luxury cars, and specialist care requests.</span>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-contrast" id="pricing">
+    <section class="section accent-section" id="pricing">
       <div class="container">
         <div class="section-head reveal">
           <div class="eyebrow">Packages & Pricing</div>
-          <h2>Premium presentation, transparent starting prices.</h2>
+          <h2>Clear packages. Premium workmanship.</h2>
           <p>
-            Realistic pricing for Tilburg clients. Final quotes depend on vehicle size, condition, and how much correction or stain removal is required.
+            Straightforward starting prices for Tilburg clients. Final pricing depends on vehicle size, condition, and specific correction needs.
           </p>
         </div>
 
@@ -274,197 +267,152 @@
           <article class="price-card reveal">
             <div class="price-top">
               <h3>Interior Basic</h3>
-              <div class="price">€79</div>
+              <div class="price">€89</div>
             </div>
-            <p>For a quick but proper interior refresh that makes the cabin feel cleaner, fresher, and easier to live with.</p>
+            <p>For vehicles that need a clean, fresh cabin without a full restorative treatment.</p>
             <ul>
-              <li>Vacuum and wipe-down</li>
+              <li>Vacuum and blow-out</li>
               <li>Dash, trims, and console cleaned</li>
-              <li>Interior glass cleaned</li>
-              <li>Light plastic finishing</li>
+              <li>Windows cleaned inside</li>
+              <li>Light finishing touch on plastics</li>
             </ul>
-            <a class="button button-ghost button-full" href="#contact">Choose Package</a>
           </article>
 
-          <article class="price-card featured-price reveal">
-            <div class="price-badge">Most Booked</div>
+          <article class="price-card reveal featured-price">
+            <div class="price-badge">Most Requested</div>
             <div class="price-top">
               <h3>Interior Premium</h3>
-              <div class="price">€129</div>
+              <div class="price">€149</div>
             </div>
-            <p>A deeper interior treatment for noticeably better hygiene, cleaner fabrics, and a more refined cabin feel.</p>
+            <p>A deeper interior treatment for more noticeable transformation and hygiene.</p>
             <ul>
               <li>Everything in Interior Basic</li>
               <li>Fabric or carpet spot treatment</li>
               <li>Door jamb cleaning</li>
-              <li>Extra attention to vents, seams, and trims</li>
+              <li>Deeper trim and vent detailing</li>
             </ul>
-            <a class="button button-primary button-full" href="#contact">Book Interior Premium</a>
           </article>
 
           <article class="price-card reveal">
             <div class="price-top">
               <h3>Exterior Detail</h3>
-              <div class="price">€99</div>
+              <div class="price">€119</div>
             </div>
-            <p>A safe exterior package that removes contamination, lifts gloss, and leaves the car visibly sharper.</p>
+            <p>A safe decontamination-focused exterior package that restores visual sharpness and gloss.</p>
             <ul>
               <li>Hand wash and safe dry</li>
-              <li>Wheel and tire deep clean</li>
+              <li>Wheel faces and tires cleaned</li>
               <li>Bug and fallout removal</li>
-              <li>Protective finish applied</li>
+              <li>Protective finishing layer</li>
             </ul>
-            <a class="button button-ghost button-full" href="#contact">Choose Package</a>
           </article>
 
           <article class="price-card reveal">
             <div class="price-top">
               <h3>Full Detail</h3>
-              <div class="price">€199</div>
+              <div class="price">€239</div>
             </div>
-            <p>A complete inside-and-out transformation for clients who want the biggest visual improvement in one appointment.</p>
+            <p>A full reset inside and out for drivers who want the most noticeable all-round improvement.</p>
             <ul>
               <li>Interior deep clean</li>
-              <li>Exterior decontamination</li>
+              <li>Exterior detail and decontamination</li>
               <li>Trim and tire dressing</li>
-              <li>Gloss enhancement finish</li>
+              <li>Paint gloss enhancement finish</li>
             </ul>
-            <a class="button button-ghost button-full" href="#contact">Choose Package</a>
           </article>
 
-          <article class="price-card wide-card reveal">
+          <article class="price-card reveal wide-card">
             <div class="price-top">
               <h3>Paint Correction + Ceramic Coating</h3>
-              <div class="price">€399</div>
+              <div class="price">from €895</div>
             </div>
-            <p>For clients who want a sharper, glossier finish with durable paint protection and easier washing afterwards.</p>
+            <p>
+              A premium protection package for owners who want maximum gloss, sharper reflection, and durable surface defence.
+            </p>
             <ul>
               <li>Paint inspection and decontamination</li>
               <li>Single-stage correction included</li>
               <li>Ceramic coating application</li>
-              <li>Aftercare and maintenance advice</li>
+              <li>Aftercare advice and maintenance guidance</li>
             </ul>
-            <a class="button button-primary button-full" href="#contact">Request Coating Quote</a>
           </article>
         </div>
 
-        <div class="pricing-note reveal">
-          Optional add-ons: upholstery extraction, leather conditioning, odour treatment, engine bay detailing, and headlight restoration.
-        </div>
+        <p class="pricing-note reveal">
+          Optional add-ons: upholstery extraction, leather conditioning, engine bay detailing, odour treatment, and headlight restoration.
+        </p>
       </div>
     </section>
 
-    <section class="section" id="results">
+    <section class="section" id="gallery">
       <div class="container">
         <div class="section-head reveal">
-          <div class="eyebrow">Before / After Gallery</div>
-          <h2>Real visual transformation is what makes detailing feel premium.</h2>
+          <div class="eyebrow">Before / After Results</div>
+          <h2>Transformation should be visible at a glance.</h2>
           <p>
-            This section is built around proof. Not vague promises — visible changes in cleanliness, gloss, clarity, and finish quality.
+            This section is built to showcase storytelling through results: the contrast between tired surfaces and a restored finish.
           </p>
         </div>
 
         <div class="gallery-grid">
           <article class="gallery-card reveal">
-            <div class="gallery-single">
-              <img src="https://www.nuviewautosalon.com/images/before-after-int.jpg" alt="Before and after interior detailing result showing a heavily soiled rear seat cleaned and restored" loading="lazy">
+            <div class="comparison-card">
+              <div class="state state-before">Before</div>
+              <div class="state state-after">After</div>
             </div>
-            <div class="gallery-copy">
-              <h3>Dirty interior to fresh, restored cabin</h3>
-              <p>Perfect for showing what a deep interior service really changes: fabrics, surfaces, colour, and overall feel.</p>
-            </div>
+            <h3>Dirty interior to fresh, refined cabin</h3>
+            <p>Show heavy dust, stains, crumbs, and dull trim versus a crisp, sanitised, well-finished interior.</p>
           </article>
 
           <article class="gallery-card reveal">
-            <div class="gallery-single">
-              <img src="https://www.nuviewautosalon.com/images/before-after-floor.jpg" alt="Before and after footwell detailing showing dirt removal and restored carpet appearance" loading="lazy">
-            </div>
-            <div class="gallery-copy">
-              <h3>Footwell and carpet recovery</h3>
-              <p>Great visual storytelling for daily-use vehicles where dirt, sand, crumbs, and hidden grime build up fast.</p>
-            </div>
+            <div class="comparison-card paint"></div>
+            <h3>Swirled paint to deep gloss finish</h3>
+            <p>Highlight the difference between scratched, hazy paint and a polished surface with depth and clarity.</p>
           </article>
 
           <article class="gallery-card reveal">
-            <div class="gallery-compare two-up">
-              <figure>
-                <span class="state-label state-before">Before</span>
-                <img src="https://doctordetail.com/wp-content/uploads/2025/05/front_bumper_refinish-1.png" alt="Damaged front bumper before correction" loading="lazy">
-              </figure>
-              <figure>
-                <span class="state-label state-after">After</span>
-                <img src="https://doctordetail.com/wp-content/uploads/2025/05/After_front_bumper_finish.png" alt="Refinished front bumper after correction" loading="lazy">
-              </figure>
-            </div>
-            <div class="gallery-copy">
-              <h3>Damaged exterior to clean, corrected finish</h3>
-              <p>Use this kind of visual contrast to emphasize paint refinement, sharper presentation, and higher perceived quality.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card reveal">
-            <div class="gallery-single">
-              <img src="https://i0.wp.com/visualfoodie.com/wp-content/uploads/diy-car-wheel-restoration-before-and-after.webp?crop=1&amp;h=720&amp;quality=50&amp;ssl=1&amp;w=1280" alt="Before and after alloy wheel restoration" loading="lazy">
-            </div>
-            <div class="gallery-copy">
-              <h3>Wheels from neglected to sharp again</h3>
-              <p>Small details matter. Clean, corrected wheels instantly make the whole vehicle look more premium and better maintained.</p>
-            </div>
+            <div class="comparison-card wheels"></div>
+            <h3>Brake dust and grime to clean wheel faces</h3>
+            <p>Focus on wheel barrels, tire walls, and lug areas to emphasize precision cleaning where people rarely look.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="cta-banner section reveal">
-      <div class="container cta-banner-wrap">
-        <div class="cta-banner-copy">
-          <div class="eyebrow">Make the next step obvious</div>
-          <h2>Your car deserves more than a basic wash.</h2>
-          <p>
-            Book a detail, ask for a tailored quote, or send a few photos of the vehicle and we will recommend the right package.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Book Now</a>
-            <a class="button button-secondary" href="tel:+31612345678">Call for Advice</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-contrast" id="why-us">
+    <section class="section accent-section" id="why-us">
       <div class="container">
         <div class="section-head reveal">
           <div class="eyebrow">Why Choose Us</div>
-          <h2>Premium feel is built through process, not just appearance.</h2>
+          <h2>Built on trust, precision, and a premium finish standard.</h2>
           <p>
-            Obsidian Detailing is designed to look modern, but more importantly, to feel trustworthy. The service should feel calm, premium, and clearly worth booking.
+            The difference is not just in how a car looks when it leaves — it is in how carefully every stage is handled.
           </p>
         </div>
 
         <div class="benefits-grid">
           <article class="benefit-card reveal">
             <h3>Professional Products</h3>
-            <p>Safe, surface-appropriate chemicals and coatings selected for proper results instead of rushed shortcuts.</p>
+            <p>Only quality-safe chemicals, coatings, and finishing products selected for proper surface care.</p>
           </article>
           <article class="benefit-card reveal">
             <h3>Advanced Equipment</h3>
-            <p>Extraction tools, polishers, inspection lighting, and detailing accessories chosen for precision work.</p>
+            <p>Professional tools for extraction, polishing, lighting inspection, and precision cleaning.</p>
           </article>
           <article class="benefit-card reveal">
             <h3>Attention to Detail</h3>
-            <p>Seams, edges, vents, badges, wheel faces, trim lines, and all the small places clients notice later.</p>
+            <p>Small areas matter — vents, seams, edges, wheel details, trim lines, and finishing touches.</p>
           </article>
           <article class="benefit-card reveal">
             <h3>Experienced Specialists</h3>
-            <p>A methodical approach shaped by real automotive passion and a high finish standard from start to finish.</p>
+            <p>A methodical, finish-first approach shaped by real passion for cars and high presentation standards.</p>
           </article>
           <article class="benefit-card reveal">
             <h3>Premium Quality Results</h3>
-            <p>Cleaner cabins, sharper gloss, richer materials, and a more expensive-looking finish overall.</p>
+            <p>Sharper gloss, cleaner interiors, richer materials, and a visibly more refined overall appearance.</p>
           </article>
           <article class="benefit-card reveal">
             <h3>Personalized Service</h3>
-            <p>Every vehicle is assessed individually so the treatment matches the condition, budget, and owner goals.</p>
+            <p>Every vehicle is assessed individually so the treatment matches the condition and the owner’s priorities.</p>
           </article>
         </div>
       </div>
@@ -474,17 +422,15 @@
       <div class="container">
         <div class="section-head reveal">
           <div class="eyebrow">Customer Reviews</div>
-          <h2>Reviews that sound like real people, not advertising copy.</h2>
-          <p>
-            The tone here is personal, natural, and specific enough to build trust quickly.
-          </p>
+          <h2>Feedback that feels earned.</h2>
+          <p>Natural, trust-building testimonials written to feel personal, specific, and believable.</p>
         </div>
 
         <div class="reviews-grid">
           <article class="review-card reveal">
-            <span class="stars">★★★★★</span>
             <p>
-              “I brought in my Audi after a long winter and the difference was immediate. The paint looked glossier, the wheels were spotless, and the interior felt far more premium again.”
+              “My Golf looked genuinely tired before I brought it in. The interior felt new again, the paint had a much deeper shine,
+              and the whole experience felt very professional from start to finish.”
             </p>
             <div class="review-author">
               <strong>Mark V.</strong>
@@ -493,9 +439,9 @@
           </article>
 
           <article class="review-card reveal">
-            <span class="stars">★★★★★</span>
             <p>
-              “Booked Interior Premium because the car had coffee stains and months of daily mess. It came back looking and smelling fresh without feeling over-processed. Very professional service.”
+              “I booked the Interior Premium package after months of family use and coffee spills. The transformation was far better than I expected.
+              Clean, fresh, and done with real care.”
             </p>
             <div class="review-author">
               <strong>Sophie R.</strong>
@@ -504,9 +450,8 @@
           </article>
 
           <article class="review-card reveal">
-            <span class="stars">★★★★★</span>
             <p>
-              “My black BMW had swirl marks everywhere. After the correction work the gloss was on a completely different level. Easily the best it has looked since I bought it.”
+              “The paint correction made a huge difference on my black BMW. Swirl marks were massively reduced and the gloss outside in daylight was stunning.”
             </p>
             <div class="review-author">
               <strong>Jasper D.</strong>
@@ -515,9 +460,8 @@
           </article>
 
           <article class="review-card reveal">
-            <span class="stars">★★★★★</span>
             <p>
-              “What impressed me most was how clear everything felt. Good communication, fair expectations, and a result that actually matched the premium style of the website.”
+              “What stood out most was the communication. Clear quote, realistic timing, and the result matched the premium feel the brand promises.”
             </p>
             <div class="review-author">
               <strong>Nina K.</strong>
@@ -526,9 +470,8 @@
           </article>
 
           <article class="review-card reveal">
-            <span class="stars">★★★★★</span>
             <p>
-              “The ceramic coating package was exactly what I wanted. The car looks richer, washing is easier, and the finish has that clean reflection you usually only see on showroom cars.”
+              “I chose the ceramic coating package and the car now looks easier to maintain and much glossier. You can tell they care about doing things properly.”
             </p>
             <div class="review-author">
               <strong>Tom B.</strong>
@@ -539,28 +482,28 @@
       </div>
     </section>
 
-    <section class="section section-contrast" id="process">
+    <section class="section accent-section" id="process">
       <div class="container">
         <div class="section-head reveal">
           <div class="eyebrow">How It Works</div>
-          <h2>Very simple. Very visual. Very easy to book.</h2>
+          <h2>Simple to book. Satisfying to pick up.</h2>
         </div>
 
         <div class="steps-grid">
           <article class="step-card reveal">
             <span class="step-number">01</span>
             <h3>Choose your service</h3>
-            <p>Select a package or request a custom quote based on the condition of your car.</p>
+            <p>Select the package that fits your vehicle, or request a tailored quote for specialist work.</p>
           </article>
           <article class="step-card reveal">
             <span class="step-number">02</span>
-            <h3>Book online or by phone</h3>
-            <p>Send your request, confirm a time, and get clear expectations before the appointment.</p>
+            <h3>Book your appointment</h3>
+            <p>Book online or by phone and receive a clear confirmation with timing and expectations.</p>
           </article>
           <article class="step-card reveal">
             <span class="step-number">03</span>
             <h3>Drop off and collect spotless</h3>
-            <p>Leave your car with us and pick it up looking cleaner, sharper, and better presented.</p>
+            <p>Leave your vehicle with us and come back to a cleaner, sharper, more refined finish.</p>
           </article>
         </div>
       </div>
@@ -570,18 +513,18 @@
       <div class="container faq-wrap">
         <div class="section-head reveal">
           <div class="eyebrow">FAQ</div>
-          <h2>Everything clients usually ask before booking.</h2>
-          <p>Clear answers to remove hesitation and make the next step easy.</p>
+          <h2>Clear answers before you book.</h2>
+          <p>Common questions clients ask before choosing a detailing service.</p>
         </div>
 
         <div class="faq-list">
-          <article class="faq-item reveal open">
+          <article class="faq-item reveal">
             <button class="faq-question" type="button">
               <span>How long does a full detail take?</span>
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>Most full details take between 4 and 8 hours depending on vehicle size, interior condition, and any extra correction work.</p>
+              <p>Most full details take between 4 and 8 hours depending on vehicle size, condition, and selected add-ons.</p>
             </div>
           </article>
 
@@ -591,7 +534,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>That depends on the coating and how the car is maintained, but professional ceramic coatings are designed for long-term protection rather than short-term shine.</p>
+              <p>That depends on the product and maintenance routine, but professional coatings typically offer long-term protection measured in years rather than weeks.</p>
             </div>
           </article>
 
@@ -601,7 +544,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>Yes. Obsidian Detailing works by appointment so each car gets the time, space, and attention it actually needs.</p>
+              <p>Yes. We work by appointment so each vehicle receives the time, space, and attention it needs.</p>
             </div>
           </article>
 
@@ -611,7 +554,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>In many cases, yes. Most common stains and trapped odours can be improved significantly, and often removed completely depending on severity.</p>
+              <p>In many cases, yes. We can significantly improve or remove common stains and reduce trapped odours, depending on how deep the contamination is.</p>
             </div>
           </article>
 
@@ -621,7 +564,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>A regular wash is surface cleaning. Detailing goes deeper with careful cleaning, restoration, correction, and protection across the whole vehicle.</p>
+              <p>A regular wash focuses on surface-level cleaning. Detailing goes deeper with careful cleaning, restoration, correction, and protection of the vehicle inside and out.</p>
             </div>
           </article>
 
@@ -631,47 +574,46 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>For most cars, every 3 to 6 months keeps the vehicle looking strong. High-use vehicles often benefit from more frequent interior care.</p>
+              <p>For most vehicles, a detail every 3 to 6 months keeps the car in strong condition. High-use vehicles may benefit from more frequent interior care.</p>
             </div>
           </article>
 
           <article class="faq-item reveal">
             <button class="faq-question" type="button">
-              <span>Can you work on newer premium or performance cars?</span>
+              <span>Is paint correction safe for my vehicle?</span>
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>Absolutely. The service style is designed specifically for owners who care about finish quality, paint safety, and premium presentation.</p>
+              <p>Yes, when done professionally and after inspection. The process is chosen based on paint thickness, condition, and the result you want to achieve.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-contrast" id="about">
+    <section class="section accent-section" id="about">
       <div class="container about-grid">
-        <div class="about-visual reveal">
-          <img src="https://www.nuviewautosalon.com/images/interior-detail.jpg" alt="Detailer cleaning a premium car interior" loading="lazy">
+        <div class="section-head reveal about-copy">
+          <div class="eyebrow">About Us</div>
+          <h2>Driven by a genuine respect for cars and the details that define them.</h2>
+          <p>
+            Obsidian Detailing was created around a simple idea: premium detailing should feel calm, precise, transparent, and visibly worth it.
+            We believe a well-kept vehicle is not just cleaner — it feels better to drive, own, and look at.
+          </p>
+          <p>
+            From daily-use interiors to gloss-focused paint correction, our work is guided by patience, proper technique, and a real appreciation for automotive presentation.
+            No rushed finishes. No one-size-fits-all treatment. Just careful workmanship and results that speak for themselves.
+          </p>
         </div>
 
-        <div class="about-copy reveal">
-          <div class="eyebrow">About Us</div>
-          <h2>Built by people who genuinely care how a car looks, feels, and is presented.</h2>
-          <p>
-            Obsidian Detailing started with a simple idea: premium detailing should feel calm, precise, and visibly worth it. Not rushed. Not generic. Not something that feels like a basic car wash with a bigger price tag.
-          </p>
-          <p>
-            We care about paint depth, clean interiors, crisp trims, and the small finishing details that change how a vehicle feels to own. Every appointment is handled with patience, proper technique, and a level of care that suits modern, premium automotive clients.
-          </p>
-          <div class="about-panel">
-            <strong>Our approach</strong>
-            <ul>
-              <li>Inspect the vehicle first</li>
-              <li>Recommend only what adds real value</li>
-              <li>Deliver visible, premium-quality results</li>
-              <li>Keep communication clear and professional</li>
-            </ul>
-          </div>
+        <div class="about-panel glass-card reveal">
+          <h3>Our approach</h3>
+          <ul>
+            <li>Careful inspection before every service</li>
+            <li>Clear recommendations based on condition</li>
+            <li>Premium finish with no unnecessary upselling</li>
+            <li>Friendly, professional communication throughout</li>
+          </ul>
           <a class="button button-primary" href="#contact">Request an Appointment</a>
         </div>
       </div>
@@ -682,16 +624,14 @@
         <div class="contact-info reveal">
           <div class="section-head left-align">
             <div class="eyebrow">Contact</div>
-            <h2>Ready to book your detail or ask for a quote?</h2>
-            <p>
-              Reach out for package advice, pricing, or a tailored recommendation based on your vehicle condition and goals.
-            </p>
+            <h2>Ready to give your car the finish it deserves?</h2>
+            <p>Reach out for a quote, package advice, or to reserve your appointment in Tilburg.</p>
           </div>
 
           <div class="contact-card">
             <div>
-              <span class="contact-label">Address</span>
-              <p>Appointment-only studio<br>Tilburg, North Brabant, Netherlands</p>
+              <span class="contact-label">Studio Location</span>
+              <p>Tilburg, North Brabant, Netherlands<br><small>Exact appointment details shared upon booking.</small></p>
             </div>
             <div>
               <span class="contact-label">Phone</span>
@@ -703,17 +643,12 @@
             </div>
             <div>
               <span class="contact-label">Opening Hours</span>
-              <p>Mon – Fri: 09:00 – 18:00<br>Saturday: 10:00 – 16:00<br>Sunday: Closed</p>
+              <p>Mon–Fri: 09:00 – 18:00<br>Saturday: 10:00 – 16:00<br>Sunday: Closed</p>
             </div>
           </div>
         </div>
 
         <div class="form-card reveal">
-          <div class="form-intro">
-            <strong>Appointment Form</strong>
-            <p>Tell us what you drive and what kind of result you want. We will follow up with availability and the right package.</p>
-          </div>
-
           <form id="booking-form" class="booking-form">
             <div class="form-row">
               <label>
@@ -759,7 +694,7 @@
               </label>
             </div>
 
-            <button type="submit" class="button button-primary button-full">Book Now / Request Quote</button>
+            <button type="submit" class="button button-primary button-full">Send Appointment Request</button>
             <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
           </form>
         </div>
@@ -772,18 +707,18 @@
       <div>
         <a class="brand footer-brand" href="#top">
           <span class="brand-mark"></span>
-          <span class="brand-text">
+          <span>
             <strong>Obsidian</strong>
             <em>Detailing</em>
           </span>
         </a>
-        <p>Premium auto detailing in Tilburg with a modern, clean, result-first experience.</p>
+        <p>Premium auto detailing in Tilburg with a clean, modern, result-first approach.</p>
       </div>
 
       <div class="footer-links">
         <a href="#services">Services</a>
-        <a href="#pricing">Packages</a>
-        <a href="#results">Results</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery">Results</a>
         <a href="#contact">Book Now</a>
       </div>
 
@@ -792,8 +727,6 @@
       </div>
     </div>
   </footer>
-
-  <a class="floating-cta" href="#contact">Book Now</a>
 
   <script src="script.js"></script>
 </body>
