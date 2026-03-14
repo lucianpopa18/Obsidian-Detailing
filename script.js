@@ -1,10 +1,11 @@
 const menuToggle = document.getElementById('menu-toggle');
 const siteNav = document.getElementById('site-nav');
-const navLinks = siteNav.querySelectorAll('a');
+const navLinks = siteNav ? siteNav.querySelectorAll('a') : [];
 const faqItems = document.querySelectorAll('.faq-item');
 const yearNode = document.getElementById('year');
 const form = document.getElementById('booking-form');
 const feedback = document.getElementById('form-feedback');
+const header = document.querySelector('.header');
 
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
@@ -31,6 +32,7 @@ if (menuToggle && siteNav) {
 
 faqItems.forEach((item) => {
   const button = item.querySelector('.faq-question');
+
   button.addEventListener('click', () => {
     const isOpen = item.classList.contains('open');
 
@@ -52,18 +54,28 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.12,
+    threshold: 0.14,
   }
 );
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
 if (form && feedback) {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     const data = new FormData(form);
     const firstName = (data.get('name') || 'there').toString().trim().split(' ')[0];
-    feedback.textContent = `Thanks ${firstName}, your request has been prepared. Obsidian Detailing will follow up to confirm availability and your quote.`;
+    feedback.textContent = `Thanks ${firstName}, your request has been received. Obsidian Detailing will follow up with availability and the best package for your vehicle.`;
     form.reset();
   });
 }
+
+window.addEventListener('scroll', () => {
+  if (!header) return;
+
+  if (window.scrollY > 16) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
