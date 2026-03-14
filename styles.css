@@ -314,6 +314,14 @@ a {
   align-items: center;
 }
 
+.hero-grid {
+  align-items: start;
+}
+
+.hero-visual {
+  align-self: start;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
