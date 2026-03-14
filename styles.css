@@ -981,22 +981,6 @@ textarea {
   text-align: right;
 }
 
-.floating-cta {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 1000;
-  min-height: 54px;
-  padding: 0 22px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #ffffff, #dfe6f2);
-  color: #0c1118;
-  font-weight: 800;
-  box-shadow: 0 22px 42px rgba(0, 0, 0, 0.35);
-}
 
 .reveal {
   opacity: 0;
@@ -1137,11 +1121,6 @@ textarea {
     text-align: left;
   }
 
-  .floating-cta {
-    left: 20px;
-    right: 20px;
-    bottom: 16px;
-  }
 }
 
 @media (max-width: 540px) {
